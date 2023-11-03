@@ -1,6 +1,9 @@
 # Allow vendor init to set SSR property
 set_prop(vendor_init, vendor_ssr_prop)
 
+# Allow vendor init to set Fingerprint property
+set_prop(vendor_init, vendor_fingerprint_prop)
+
 # Allow vendor init to set SSR property
 set_prop(vendor_init, vendor_nfc_prop)
 

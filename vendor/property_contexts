@@ -97,6 +97,12 @@ vendor.hbm.enable                               u:object_r:vendor_displayfeature
 vendor.mi_sf.                                   u:object_r:vendor_displayfeature_prop:s0
 vendor.video.mode.status                        u:object_r:vendor_displayfeature_prop:s0
 
+# Fingerprint properties
+persist.vendor.sys.fp.                  u:object_r:vendor_fingerprint_prop:s0
+ro.boot.fpsensor                        u:object_r:vendor_fingerprint_prop:s0
+ro.hardware.fp.                         u:object_r:vendor_fingerprint_prop:s0
+vendor.fps_hal.                         u:object_r:vendor_fingerprint_prop:s0
+
 # NFC
 persist.vendor.nfc.                             u:object_r:vendor_nfc_prop:s0
 ro.vendor.se.type                               u:object_r:vendor_nfc_prop:s0

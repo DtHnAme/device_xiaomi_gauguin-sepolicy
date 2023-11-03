@@ -39,6 +39,18 @@ genfscon sysfs "/devices/virtual/touch/touch_dev/touch_thp_x_resolution" u:objec
 genfscon sysfs "/devices/virtual/touch/touch_dev/touch_thp_y_resolution" u:object_r:sysfs_touch_hostprocess:s0
 genfscon sysfs "/devices/virtual/touch/touch_dev/update_rawdata" u:object_r:sysfs_touch_hostprocess:s0
 
+# Fingerprint sysfs
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/clk_prepare                   u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/device_prepare                u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/fingerdown_wait               u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/handle_wakelock               u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/irq                           u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/irq_enable                    u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/power_cfg                     u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/request_vreg                  u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/vendor                        u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/wakeup_enable                 u:object_r:vendor_sysfs_fingerprint:s0
+
 # Vibrator
 genfscon sysfs /devices/platform/soc/soc:pwm_vibrator/leds/vibrator/activate  u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/soc/soc:pwm_vibrator/leds/vibrator/duration  u:object_r:sysfs_leds:s0

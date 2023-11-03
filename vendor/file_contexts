@@ -32,9 +32,21 @@
 /vendor/bin/hw/vendor\.dolby\.media\.c2@1\.0-service                                   u:object_r:mediacodec_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@2\.0-service               u:object_r:hal_dms_default_exec:s0
 
+# Fingerprint data
+/data/vendor/fpc(/.*)?                    u:object_r:vendor_fingerprint_data_file:s0
+/data/vendor/fpdump(/.*)?                 u:object_r:vendor_fingerprint_data_file:s0
+/data/vendor/gf_data(/.*)?                u:object_r:vendor_fingerprint_data_file:s0
+/data/vendor/goodix(/.*)?                 u:object_r:vendor_fingerprint_data_file:s0
+/mnt/vendor/persist/fpc(/.*)?             u:object_r:vendor_fingerprint_data_file:s0
+/mnt/vendor/persist/goodix(/.*)?          u:object_r:vendor_fingerprint_data_file:s0
+
+# Fingerprint devices
+/dev/goodix_fp                            u:object_r:fingerprint_device:s0
+
 # HAL
 /(vendor|system/vendor)/bin/hw/android\.hardware\.health-service\.xiaomi               u:object_r:hal_health_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light-service\.xiaomi                u:object_r:hal_light_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2.3-service\.xiaomi u:object_r:hal_fingerprint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.sensors@2.1-service\.xiaomi-multihal u:object_r:hal_sensors_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.xiaomi        u:object_r:hal_vibrator_default_exec:s0
 
