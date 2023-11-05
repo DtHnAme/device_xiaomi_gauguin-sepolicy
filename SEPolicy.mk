@@ -1,4 +1,4 @@
-SEPOLICY_PATH_XIAOMI:= device/xiaomi/sepolicy
+SEPOLICY_PATH_XIAOMI:= device/xiaomi/gauguin-sepolicy
 
 BOARD_VENDOR_SEPOLICY_DIRS += \
     $(SEPOLICY_PATH_XIAOMI)/vendor
